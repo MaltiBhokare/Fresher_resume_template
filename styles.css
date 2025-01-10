@@ -1,0 +1,90 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Resume Container */
+.resume {
+    width: 210mm;
+    height: 297mm;
+    background-color: #fff;
+    padding: 20mm;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    border-radius: 8px;
+}
+
+/* Header */
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #283593;
+}
+
+.header h2 {
+    margin: 5px 0 20px;
+    font-size: 20px;
+    color: #555;
+}
+
+/* Contact Information */
+.contact-info p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Sections */
+.section {
+    margin-top: 20px;
+}
+
+.section h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #283593;
+    border-bottom: 2px solid #283593;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Editable Content */
+[contenteditable="true"] {
+    border: 1px dashed transparent;
+    padding: 2px;
+    transition: border-color 0.3s;
+}
+
+[contenteditable="true"]:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+/* Print Optimization */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .resume {
+        box-shadow: none;
+        margin: 0;
+        width: 210mm;
+        height: 297mm;
+    }
+}
